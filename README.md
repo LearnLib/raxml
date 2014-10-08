@@ -14,6 +14,8 @@ the papers in the *./papers* folder.
 The benchmarks distributed under the terms of the BSD license (see
 license.txt).
 
+The Java parser for the benchmarks is distributed under LGPLv3 (see
+http://www.gnu.de/documents/lgpl.en.html).
 
 How To Use
 ==============================================
