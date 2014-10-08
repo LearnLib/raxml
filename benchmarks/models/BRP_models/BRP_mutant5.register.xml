@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<register-automaton>
+   <alphabet>
+      <inputs>
+         <symbol name="IACK"/>
+         <symbol name="ITIMEOUT"/>
+         <symbol name="IREQ"> 
+            <param type="int" name="p0"/>
+            <param type="int" name="p1"/>
+            <param type="int" name="p2"/> 
+         </symbol>
+      </inputs>
+      <outputs>
+         <symbol name="OCONF"> 
+            <param type="int" name="p0"/> 
+         </symbol>
+         <symbol name="OFRAME"> 
+            <param type="int" name="p0"/>
+            <param type="int" name="p1"/>
+            <param type="int" name="p2"/>
+            <param type="int" name="p3"/> 
+         </symbol>
+         <symbol name="ONOK"/>
+      </outputs>
+   </alphabet>
+   <constants>
+      <constant type="int" name="constant0">0</constant>
+      <constant type="int" name="constant1">1</constant>
+      <constant type="int" name="constant2">2</constant>
+   </constants>
+   <globals>
+      <variable type="int" name="local_x0">-1</variable>
+      <variable type="int" name="local_x1">-1</variable>
+      <variable type="int" name="local_x2">-1</variable>
+      <variable type="int" name="x2">-1</variable>
+      <variable type="int" name="x0">-1</variable>
+      <variable type="int" name="x1">-1</variable>
+      <variable type="int" name="local_p0">-1</variable>
+   </globals>
+   <locations>
+      <location name="s0" initial="true"/> 
+      <location name="m55"/> 
+      <location name="m54"/> 
+      <location name="m57"/> 
+      <location name="m56"/> 
+      <location name="m51"/> 
+      <location name="m50"/> 
+      <location name="m53"/> 
+      <location name="m52"/> 
+      <location name="m59"/> 
+      <location name="m58"/> 
+      <location name="m48"/> 
+      <location name="m49"/> 
+      <location name="m42"/> 
+      <location name="m43"/> 
+      <location name="m40"/> 
+      <location name="m41"/> 
+      <location name="m46"/> 
+      <location name="m47"/> 
+      <location name="m44"/> 
+      <location name="m45"/> 
+      <location name="m83"/> 
+      <location name="m39"/> 
+      <location name="m38"/> 
+      <location name="m37"/> 
+      <location name="m36"/> 
+      <location name="m35"/> 
+      <location name="m34"/> 
+      <location name="m33"/> 
+      <location name="m32"/> 
+      <location name="m31"/> 
+      <location name="m30"/> 
+      <location name="s19"/> 
+      <location name="s18"/> 
+      <location name="s13"/> 
+      <location name="s12"/> 
+      <location name="s11"/> 
+      <location name="s10"/> 
+      <location name="s17"/> 
+      <location name="s16"/> 
+      <location name="s15"/> 
+      <location name="s14"/> 
+      <location name="m28"/> 
+      <location name="m29"/> 
+      <location name="m24"/> 
+      <location name="m25"/> 
+      <location name="m26"/> 
+      <location name="m27"/> 
+      <location name="m20"/> 
+      <location name="m21"/> 
+      <location name="m22"/> 
+      <location name="m23"/> 
+      <location name="m99"/> 
+      <location name="m98"/> 
+      <location name="m91"/> 
+      <location name="m90"/> 
+      <location name="m93"/> 
+      <location name="m92"/> 
+      <location name="m95"/> 
+      <location name="m94"/> 
+      <location name="m97"/> 
+      <location name="m96"/> 
+      <location name="m11"/> 
+      <location name="m10"/> 
+      <location name="m13"/> 
+      <location name="m12"/> 
+      <location name="m15"/> 
+      <location name="m14"/> 
+      <location name="m17"/> 
+      <location name="m16"/> 
+      <location name="m19"/> 
+      <location name="m18"/> 
+      <location name="m5"/> 
+      <location name="m4"/> 
+      <location name="m7"/> 
+      <location name="m6"/> 
+      <location name="m1"/> 
+      <location name="m0"/> 
+      <location name="m3"/> 
+      <location name="m2"/> 
+      <location name="m9"/> 
+      <location name="m8"/> 
+      <location name="m88"/> 
+      <location name="m89"/> 
+      <location name="m86"/> 
+      <location name="m87"/> 
+      <location name="m84"/> 
+      <location name="m85"/> 
+      <location name="m82"/> 
+      <location name="s30"/> 
+      <location name="m80"/> 
+      <location name="m81"/> 
+      <location name="m71"/> 
+      <location name="m102"/> 
+      <location name="m103"/> 
+      <location name="m100"/> 
+      <location name="m101"/> 
+      <location name="m106"/> 
+      <location name="m107"/> 
+      <location name="m104"/> 
+      <location name="m105"/> 
+      <location name="m108"/> 
+      <location name="m109"/> 
+      <location name="m73"/> 
+      <location name="m72"/> 
+      <location name="s9"/> 
+      <location name="s8"/> 
+      <location name="m77"/> 
+      <location name="m76"/> 
+      <location name="m75"/> 
+      <location name="m74"/> 
+      <location name="s3"/> 
+      <location name="s2"/> 
+      <location name="s1"/> 
+      <location name="m78"/> 
+      <location name="s7"/> 
+      <location name="s6"/> 
+      <location name="s5"/> 
+      <location name="s4"/> 
+      <location name="s35"/> 
+      <location name="s34"/> 
+      <location name="s37"/> 
+      <location name="s36"/> 
+      <location name="s31"/> 
+      <location name="m111"/> 
+      <location name="m110"/> 
+      <location name="m113"/> 
+      <location name="m112"/> 
+      <location name="m70"/> 
+      <location name="s33"/> 
+      <location name="s32"/> 
+      <location name="m60"/> 
+      <location name="m61"/> 
+      <location name="m62"/> 
+      <location name="m63"/> 
+      <location name="m64"/> 
+      <location name="m65"/> 
+      <location name="m66"/> 
+      <location name="m67"/> 
+      <location name="m68"/> 
+      <location name="m69"/> 
+      <location name="s22"/> 
+      <location name="s23"/> 
+      <location name="s20"/> 
+      <location name="s21"/> 
+      <location name="s26"/> 
+      <location name="s27"/> 
+      <location name="s24"/> 
+      <location name="s25"/> 
+      <location name="s28"/> 
+      <location name="s29"/> 
+      <location name="m79"/> 
+   </locations>
+   <transitions>
+      <transition from="s0" to="m0" symbol="IACK" />
+      <transition from="m0" to="s0" symbol="ONOK" />
+      <transition from="s0" to="m1" symbol="ITIMEOUT" />
+      <transition from="m1" to="s0" symbol="ONOK" />
+      <transition from="s0" to="m2" symbol="IREQ" params="p0,p1,p2">
+         <assignments>
+            <assign to="x2">p2</assign>
+            <assign to="x0">p1</assign>
+            <assign to="x1">p0</assign>
+            <assign to="local_p0">p0</assign>
+         </assignments>
+      </transition>
+      <transition from="m2" to="s1" symbol="OFRAME" params="1,0,0,local_p0"/>
+      <transition from="s1" to="m3" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m3" to="s2" symbol="OFRAME" params="0,0,1,local_x0"/>
+      <transition from="s1" to="m4" symbol="ITIMEOUT" />
+      <transition from="m4" to="s3" symbol="OFRAME" params="1,0,0,x1"/>
+      <transition from="s1" to="m5" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m5" to="s1" symbol="ONOK" />
+      <transition from="s2" to="m6" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m6" to="s4" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s2" to="m7" symbol="ITIMEOUT" />
+      <transition from="m7" to="s5" symbol="OFRAME" params="0,0,1,x1"/>
+      <transition from="s2" to="m8" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m8" to="s2" symbol="ONOK" />
+      <transition from="s3" to="m9" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m9" to="s2" symbol="OFRAME" params="0,0,1,local_x0"/>
+      <transition from="s3" to="m10" symbol="ITIMEOUT" />
+      <transition from="m10" to="s6" symbol="OFRAME" params="1,0,0,x1"/>
+      <transition from="s3" to="m11" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m11" to="s3" symbol="ONOK" />
+      <transition from="s4" to="m12" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m12" to="s7" symbol="OCONF" params="1"/>
+      <transition from="s4" to="m13" symbol="ITIMEOUT" />
+      <transition from="m13" to="s8" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s4" to="m14" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m14" to="s4" symbol="ONOK" />
+      <transition from="s5" to="m15" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m15" to="s4" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s5" to="m16" symbol="ITIMEOUT" />
+      <transition from="m16" to="s9" symbol="OFRAME" params="0,0,1,x1"/>
+      <transition from="s5" to="m17" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m17" to="s5" symbol="ONOK" />
+      <transition from="s6" to="m18" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m18" to="s2" symbol="OFRAME" params="0,0,1,local_x0"/>
+      <transition from="s6" to="m19" symbol="ITIMEOUT" />
+      <transition from="m19" to="s10" symbol="OFRAME" params="1,0,0,x1"/>
+      <transition from="s6" to="m20" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m20" to="s6" symbol="ONOK" />
+      <transition from="s7" to="m21" symbol="IACK" />
+      <transition from="m21" to="s7" symbol="ONOK" />
+      <transition from="s7" to="m22" symbol="ITIMEOUT" />
+      <transition from="m22" to="s7" symbol="ONOK" />
+      <transition from="s7" to="m23" symbol="IREQ" params="p0,p1,p2">
+         <assignments>
+            <assign to="x2">p2</assign>
+            <assign to="x0">p1</assign>
+            <assign to="x1">p0</assign>
+            <assign to="local_p0">p0</assign>
+         </assignments>
+      </transition>
+      <transition from="m23" to="s11" symbol="OFRAME" params="1,0,1,local_p0"/>
+      <transition from="s8" to="m24" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m24" to="s7" symbol="OCONF" params="1"/>
+      <transition from="s8" to="m25" symbol="ITIMEOUT" />
+      <transition from="m25" to="s12" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s8" to="m26" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m26" to="s8" symbol="ONOK" />
+      <transition from="s9" to="m27" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m27" to="s4" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s9" to="m28" symbol="ITIMEOUT" />
+      <transition from="m28" to="s13" symbol="OFRAME" params="0,0,1,x1"/>
+      <transition from="s9" to="m29" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m29" to="s9" symbol="ONOK" />
+      <transition from="s10" to="m30" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m30" to="s2" symbol="OFRAME" params="0,0,1,local_x0"/>
+      <transition from="s10" to="m31" symbol="ITIMEOUT" />
+      <transition from="m31" to="s14" symbol="OFRAME" params="1,0,0,x1"/>
+      <transition from="s10" to="m32" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m32" to="s10" symbol="ONOK" />
+      <transition from="s11" to="m33" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m33" to="s15" symbol="OFRAME" params="0,0,0,local_x0"/>
+      <transition from="s11" to="m34" symbol="ITIMEOUT" />
+      <transition from="m34" to="s16" symbol="OFRAME" params="1,0,1,x1"/>
+      <transition from="s11" to="m35" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m35" to="s11" symbol="ONOK" />
+      <transition from="s12" to="m36" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m36" to="s7" symbol="OCONF" params="1"/>
+      <transition from="s12" to="m37" symbol="ITIMEOUT" />
+      <transition from="m37" to="s17" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s12" to="m38" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m38" to="s12" symbol="ONOK" />
+      <transition from="s13" to="m39" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m39" to="s4" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s13" to="m40" symbol="ITIMEOUT" />
+      <transition from="m40" to="s18" symbol="OFRAME" params="0,0,1,x1"/>
+      <transition from="s13" to="m41" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m41" to="s13" symbol="ONOK" />
+      <transition from="s14" to="m42" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m42" to="s2" symbol="OFRAME" params="0,0,1,local_x0"/>
+      <transition from="s14" to="m43" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x1">x1</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x1">local_x2</assign>
+         </assignments>
+      </transition>
+      <transition from="m43" to="s19" symbol="OFRAME" params="1,0,0,local_x1"/>
+      <transition from="s14" to="m44" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m44" to="s14" symbol="ONOK" />
+      <transition from="s15" to="m45" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m45" to="s20" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s15" to="m46" symbol="ITIMEOUT" />
+      <transition from="m46" to="s21" symbol="OFRAME" params="0,0,0,x1"/>
+      <transition from="s15" to="m47" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m47" to="s15" symbol="ONOK" />
+      <transition from="s16" to="m48" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m48" to="s15" symbol="OFRAME" params="0,0,0,local_x0"/>
+      <transition from="s16" to="m49" symbol="ITIMEOUT" />
+      <transition from="m49" to="s22" symbol="OFRAME" params="1,0,1,x1"/>
+      <transition from="s16" to="m50" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m50" to="s16" symbol="ONOK" />
+      <transition from="s17" to="m51" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m51" to="s7" symbol="OCONF" params="1"/>
+      <transition from="s17" to="m52" symbol="ITIMEOUT" />
+      <transition from="m52" to="s23" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s17" to="m53" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m53" to="s17" symbol="ONOK" />
+      <transition from="s18" to="m54" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m54" to="s4" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s18" to="m55" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="local_x1">x1</assign>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m55" to="s24" symbol="OFRAME" params="0,0,1,local_x1"/>
+      <transition from="s18" to="m56" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m56" to="s18" symbol="ONOK" />
+      <transition from="s19" to="m57" symbol="IACK" >
+         <assignments>
+            <assign to="local_x0">x0</assign>
+            <assign to="local_x1">x1</assign>
+            <assign to="x0">local_x1</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m57" to="s2" symbol="OFRAME" params="0,0,1,local_x0"/>
+      <transition from="s19" to="m58" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m58" to="s0" symbol="OCONF" params="0"/>
+      <transition from="s19" to="m59" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m59" to="s19" symbol="ONOK" />
+      <transition from="s20" to="m60" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m60" to="s0" symbol="OCONF" params="1"/>
+      <transition from="s20" to="m61" symbol="ITIMEOUT" />
+      <transition from="m61" to="s25" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s20" to="m62" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m62" to="s20" symbol="ONOK" />
+      <transition from="s21" to="m63" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m63" to="s20" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s21" to="m64" symbol="ITIMEOUT" />
+      <transition from="m64" to="s26" symbol="OFRAME" params="0,0,0,x1"/>
+      <transition from="s21" to="m65" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m65" to="s21" symbol="ONOK" />
+      <transition from="s22" to="m66" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m66" to="s15" symbol="OFRAME" params="0,0,0,local_x0"/>
+      <transition from="s22" to="m67" symbol="ITIMEOUT" />
+      <transition from="m67" to="s27" symbol="OFRAME" params="1,0,1,x1"/>
+      <transition from="s22" to="m68" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m68" to="s22" symbol="ONOK" />
+      <transition from="s23" to="m69" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m69" to="s7" symbol="OCONF" params="1"/>
+      <transition from="s23" to="m70" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="local_x0">x0</assign>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m70" to="s28" symbol="OFRAME" params="0,1,0,local_x0"/>
+      <transition from="s23" to="m71" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m71" to="s23" symbol="ONOK" />
+      <transition from="s24" to="m72" symbol="IACK" />
+      <transition from="m72" to="s4" symbol="OFRAME" params="0,1,0,x0"/>
+      <transition from="s24" to="m73" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m73" to="s7" symbol="OCONF" params="0"/>
+      <transition from="s24" to="m74" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m74" to="s24" symbol="ONOK" />
+      <transition from="s25" to="m75" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m75" to="s0" symbol="OCONF" params="1"/>
+      <transition from="s25" to="m76" symbol="ITIMEOUT" />
+      <transition from="m76" to="s29" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s25" to="m77" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m77" to="s25" symbol="ONOK" />
+      <transition from="s26" to="m78" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m78" to="s20" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s26" to="m79" symbol="ITIMEOUT" />
+      <transition from="m79" to="s30" symbol="OFRAME" params="0,0,0,x1"/>
+      <transition from="s26" to="m80" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m80" to="s26" symbol="ONOK" />
+      <transition from="s27" to="m81" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m81" to="s15" symbol="OFRAME" params="0,0,0,local_x0"/>
+      <transition from="s27" to="m82" symbol="ITIMEOUT" />
+      <transition from="m82" to="s31" symbol="OFRAME" params="1,0,1,x1"/>
+      <transition from="s27" to="m83" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m83" to="s27" symbol="ONOK" />
+      <transition from="s28" to="m84" symbol="IACK" />
+      <transition from="m84" to="s7" symbol="OCONF" params="1"/>
+      <transition from="s28" to="m85" symbol="ITIMEOUT" />
+      <transition from="m85" to="s0" symbol="OCONF" params="0"/>
+      <transition from="s28" to="m86" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m86" to="s28" symbol="ONOK" />
+      <transition from="s29" to="m87" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m87" to="s0" symbol="OCONF" params="1"/>
+      <transition from="s29" to="m88" symbol="ITIMEOUT" />
+      <transition from="m88" to="s32" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s29" to="m89" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m89" to="s29" symbol="ONOK" />
+      <transition from="s30" to="m90" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m90" to="s20" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s30" to="m91" symbol="ITIMEOUT" />
+      <transition from="m91" to="s33" symbol="OFRAME" params="0,0,0,x1"/>
+      <transition from="s30" to="m92" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m92" to="s30" symbol="ONOK" />
+      <transition from="s31" to="m93" symbol="IACK" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x0">x0</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x0">local_x2</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m93" to="s15" symbol="OFRAME" params="0,0,0,local_x0"/>
+      <transition from="s31" to="m94" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="local_x2">x2</assign>
+            <assign to="local_x1">x1</assign>
+            <assign to="x2">-1000000</assign>
+            <assign to="x1">local_x2</assign>
+         </assignments>
+      </transition>
+      <transition from="m94" to="s34" symbol="OFRAME" params="1,0,1,local_x1"/>
+      <transition from="s31" to="m95" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m95" to="s31" symbol="ONOK" />
+      <transition from="s32" to="m96" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m96" to="s0" symbol="OCONF" params="1"/>
+      <transition from="s32" to="m97" symbol="ITIMEOUT" />
+      <transition from="m97" to="s35" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s32" to="m98" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m98" to="s32" symbol="ONOK" />
+      <transition from="s33" to="m99" symbol="IACK" >
+         <assignments>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m99" to="s20" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s33" to="m100" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="local_x1">x1</assign>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m100" to="s36" symbol="OFRAME" params="0,0,0,local_x1"/>
+      <transition from="s33" to="m101" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m101" to="s33" symbol="ONOK" />
+      <transition from="s34" to="m102" symbol="IACK" >
+         <assignments>
+            <assign to="local_x0">x0</assign>
+            <assign to="local_x1">x1</assign>
+            <assign to="x0">local_x1</assign>
+            <assign to="x1">local_x0</assign>
+         </assignments>
+      </transition>
+      <transition from="m102" to="s15" symbol="OFRAME" params="0,0,0,local_x0"/>
+      <transition from="s34" to="m103" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+            <assign to="x1">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m103" to="s7" symbol="OCONF" params="0"/>
+      <transition from="s34" to="m104" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m104" to="s34" symbol="ONOK" />
+      <transition from="s35" to="m105" symbol="IACK" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m105" to="s0" symbol="OCONF" params="1"/>
+      <transition from="s35" to="m106" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="local_x0">x0</assign>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m106" to="s37" symbol="OFRAME" params="0,1,1,local_x0"/>
+      <transition from="s35" to="m107" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m107" to="s35" symbol="ONOK" />
+      <transition from="s36" to="m108" symbol="IACK" />
+      <transition from="m108" to="s20" symbol="OFRAME" params="0,1,1,x0"/>
+      <transition from="s36" to="m109" symbol="ITIMEOUT" >
+         <assignments>
+            <assign to="x0">-1000000</assign>
+         </assignments>
+      </transition>
+      <transition from="m109" to="s0" symbol="OCONF" params="0"/>
+      <transition from="s36" to="m110" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m110" to="s36" symbol="ONOK" />
+      <transition from="s37" to="m111" symbol="IACK" />
+      <transition from="m111" to="s0" symbol="OCONF" params="1"/>
+      <transition from="s37" to="m112" symbol="ITIMEOUT" />
+      <transition from="m112" to="s7" symbol="OCONF" params="0"/>
+      <transition from="s37" to="m113" symbol="IREQ" params="p0,p1,p2"/>
+      <transition from="m113" to="s37" symbol="ONOK" />
+   </transitions>
+</register-automaton>
