@@ -30,3 +30,11 @@ the provided benchmarks and execute data words on these automata.
   for data structures of varying size, and the xsd schema.
 * The folder *./rajava* contains a Java parser for the benchmarks.
 * The folder *./papers* contains additonal documentation.
+
+
+How To Use
+==============================================
+
+There is some documentation available at
+http://www.mbsd.cs.ru.nl/automata
+for the different benchmarks.
