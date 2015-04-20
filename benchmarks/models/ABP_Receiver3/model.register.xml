@@ -40,13 +40,13 @@
       <transition from="id3" to="id0" symbol="IFrame" params="d,b"/>
       <transition from="id1" to="id5" symbol="ONOK" />
       <transition from="id5" to="id1" symbol="IPleaseAck" />
-      <transition from="id2" to="id5" symbol="OAck" params="zero">
+      <transition from="id2" to="id5" symbol="OAck" params="expectedBit">
          <guard>expectedBit==zero</guard>
          <assignments>
             <assign to="expectedBit">one</assign>
          </assignments>
       </transition>
-      <transition from="id2" to="id5" symbol="OAck" params="one">
+      <transition from="id2" to="id5" symbol="OAck" params="expectedBit">
          <guard>expectedBit==one</guard>
          <assignments>
             <assign to="expectedBit">zero</assign>
