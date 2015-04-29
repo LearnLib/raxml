@@ -41,6 +41,7 @@
    </alphabet>
    <constants>
       <constant type="data" name="constant3">4</constant>
+      <constant type="data" name="constant3">5</constant>
    </constants>
    <globals>
       <variable type="data" name="local_x0">5</variable>
